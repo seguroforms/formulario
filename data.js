@@ -1,16 +1,25 @@
 
   const form = document.querySelector('form');
 
-  form.addEventListener('submit', function(e) {
+  form.addEventListener('submit', async function(e) {
     e.preventDefault();
 
     const datos = {
       nombre: document.getElementById('nombre').value.trim(),
       cedula: document.getElementById('cedula').value.trim(),
-      email: document.getElementById('email').value.trim(),
+      email:  document.getElementById('email').value.trim()
     };
 
-    console.log('Datos capturados:', datos);
-  window.location.href = "https://smseguros.cr/";
-    // Aquí puedes enviar los datos a un servidor, guardarlos, etc.
+    const response = await fetch('https://formspree.io/f/xjgjewjv', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(datos)
+    });
+
+    if (response.ok) {
+      alert('✅ Registro exitoso!\nNombre: ' + datos.nombre + '\nCorreo: ' + datos.email);
+      window.location.href = "https://smseguros.cr/";
+    } else {
+      alert('❌ Hubo un error. Intenta de nuevo.');
+    }
   });
