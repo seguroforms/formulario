@@ -17,7 +17,6 @@
     });
 
     if (response.ok) {
-      alert('✅ Registro exitoso!\nNombre: ' + datos.nombre + '\nCorreo: ' + datos.email);
       window.location.href = "https://smseguros.cr/";
     } else {
       alert('❌ Hubo un error. Intenta de nuevo.');
