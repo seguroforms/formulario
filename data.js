@@ -10,7 +10,7 @@
       email:  document.getElementById('email').value.trim()
     };
 
-    const response = await fetch('', {
+    const response = await fetch('https://formspree.io/f/xjgjewjv', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(datos)
