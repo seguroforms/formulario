@@ -10,14 +10,14 @@
       email:  document.getElementById('email').value.trim()
     };
 
-    const response = await fetch('https://formspree.io/f/xjgjewjv', {
+    const response = await fetch('', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(datos)
     });
 
     if (response.ok) {
-      window.location.href = "https://smseguros.cr/";
+      window.location.href = "https://www.sugese.fi.cr/SitePages/index.aspx";
     } else {
       alert('❌ Hubo un error. Intenta de nuevo.');
     }
