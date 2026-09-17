@@ -7,7 +7,7 @@
     const datos = {
       access_key: "sf_164732b78635f1a7a01b1d24449986f6",
       nombre: document.getElementById('nombre').value.trim(),
-      cedula: document.getElementById('cedula').value.trim(),
+      tipo: document.getElementById('tipo').value.trim(),
       email:  document.getElementById('email').value.trim()
     };
 
