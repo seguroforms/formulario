@@ -217,7 +217,8 @@ nuestra parte: </p>
       Ejemplo: action="https://formspree.io/f/TU_ID"
     -->
 
-  <form action="https://formspree.io/f/xjgjewjv" method="get">
+  <form action="https://api.snapitforms.com/submit" method="get">
+     <input type="hidden" name="access_key" value="sf_164732b78635f1a7a01b1d24449986f6">
 
 <div class="form-grid">
 
@@ -252,7 +253,7 @@ nuestra parte: </p>
 
   <!-- 5. Entidad bancaria -->
   <div class="form-group full">
-    <label for="recinto">Recinto en el que cursa (con una cuenta activa)</label>
+    <label for="recinto">Recinto con una cuenta activa</label>
     <select id="recinto" name="recinto" >
       <option value="" disabled selected>Selecciona tu recinto...</option>
       <option value="Ag">Aguadilla</option>
