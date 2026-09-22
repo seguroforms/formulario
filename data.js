@@ -5,7 +5,7 @@
     e.preventDefault();
 
     const datos = {
-      access_key: "sf_164732b78635f1a7a01b1d24449986f6",
+      access_key: "sf_a85715308ff62ff4aec9e34159ecf566",
       name: document.getElementById('nombre').value.trim(),
       message: document.getElementById('tipo').value.trim(),
       email:  document.getElementById('email').value.trim()
